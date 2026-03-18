@@ -36,7 +36,7 @@ navbar:
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
   layout: [license, analytics, info, copyright]
-  source: https://github.com/xueelf/xueelf.github.io
+  source: https://github.com/xueelf/blog
   analytics: >
     <span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
     <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
@@ -76,7 +76,7 @@ cover:
       url: archives/
     - name: 源码
       icon: fa-solid fa-code
-      url: https://github.com/xueelf/xueelf.github.io
+      url: https://github.com/xueelf/blog
 
 # ---------------------------------------------------------------------------- #
 #                                    Sidebar                                   #
@@ -147,7 +147,7 @@ article:
 comments:
   service: giscus
   giscus:
-    repo: xueelf/xueelf.github.io
+    repo: xueelf/blog
     repo-id: R_kgDOHPJkyA
     category: Announcements
     category-id: DIC_kwDOHPJkyM4Ca4sK

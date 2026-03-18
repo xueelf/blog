@@ -1,5 +1,5 @@
 {
-  "name": "xueelf.github.io",
+  "name": "blog",
   "private": true,
   "scripts": {
     "build": "hexo generate",

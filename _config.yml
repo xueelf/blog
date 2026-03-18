@@ -185,7 +185,7 @@ theme_config:
 # https://hexo.io/docs/one-command-deployment
 # deploy:
 #   type: "git"
-#   repo: https://github.com/xueelf/xueelf.github.io/
+#   repo: https://github.com/xueelf/blog
 #   branch: github-pages
 # Meta generator 标签
 meta_generator: false
