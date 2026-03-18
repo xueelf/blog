@@ -1,4 +1,4 @@
-name: Deploy site to Pages
+name: Deploy Hexo site to Pages
 
 on:
   push:
@@ -20,22 +20,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/checkout@v6
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
 
-      - name: Install Dependencies
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Install dependencies
         run: bun install
 
-      - name: Build
+      - name: Build with Hexo
         run: bun run build
 
-      - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 

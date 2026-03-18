@@ -1,6 +1,19 @@
 version: 2
 updates:
-  - package-ecosystem: "bun"
-    directory: "/"
+  - package-ecosystem: 'bun'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+    commit-message:
+      prefix: 'chore(deps)'
+    labels:
+      - 'dependencies'
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
       interval: "daily"
+    commit-message:
+      prefix: 'chore(deps)'
+    labels:
+      - 'dependencies'
