@@ -1,0 +1,36 @@
+<script>
+  (() => {
+    const API = 'https://tally.yuki.sh/hits/blog/home';
+
+    const setText = (id, value) => {
+      const element = document.getElementById(id);
+
+      if (element) {
+        element.textContent = value;
+      }
+    };
+
+    const loadSiteStats = async () => {
+      try {
+        const response = await fetch(API, { cache: 'no-store' });
+
+        if (!response.ok) {
+          throw new Error('Request failed');
+        }
+        const { visit, visitor } = await response.json();
+
+        setText('tally-visit', visit);
+        setText('tally-visitor', visitor);
+      } catch {
+        setText('tally-visit', '-');
+        setText('tally-visitor', '-');
+      }
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadSiteStats);
+    } else {
+      loadSiteStats();
+    }
+  })();
+</script>

@@ -38,10 +38,10 @@ site_footer:
   layout: [license, analytics, info, copyright]
   source: https://github.com/xueelf/blog
   analytics: >
-    <span id="lc-sv">本站总访问量为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
-    <span id="lc-uv">访客数为 <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
-  copyright: "[Copyright © since 2022 Yuki](/)"
-  br: "<br>"
+    <span>本站总访问量为 <span id="tally-visit"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
+    <span>访客数为 <span id="tally-visitor"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
+  copyright: '[Copyright © since 2022 Yuki](/)'
+  br: '<br>'
 
 # ---------------------------------------------------------------------------- #
 #                                     Cover                                    #
@@ -58,7 +58,7 @@ cover:
     others: true
   background: /images/pixiv/69707542.jpg
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
-  title: "Yuki 妙妙屋"
+  title: 'Yuki 妙妙屋'
   subtitle: 不要因为走得太远，就忘了当初为什么出发。
   search: 搜索...
   features:
@@ -151,10 +151,10 @@ comments:
     repo-id: R_kgDOHPJkyA
     category: Announcements
     category-id: DIC_kwDOHPJkyM4Ca4sK
-    mapping: "title"
-    reactions-enabled: "1"
-    emit-metadata: "0"
-    lang: "zh-CN"
+    mapping: 'title'
+    reactions-enabled: '1'
+    emit-metadata: '0'
+    lang: 'zh-CN'
 
 plugins:
   #   parallax:
@@ -164,9 +164,3 @@ plugins:
   #       - /images/pixiv/69707542.jpg
   darkmode:
     enable: true
-
-analytics:
-  leancloud:
-    app_id: 0dfitqFVnwsTtHuFIRbArRGg-MdYXbMMI
-    app_key: V0hLKelWjzNhS68H8SmCVi4q
-    custom_api_server:
